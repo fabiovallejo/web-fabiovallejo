@@ -1,8 +1,52 @@
-<nav>
-    <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Servicios</a></li>
-        <li><a href="">Proyectos</a></li>
-        <li><a href="">Contacto</a></li>
+<nav class="p-4 m-5 flex justify-between bg-[#424669] rounded-[20px] items-center">
+    <div class="text-[32px] font-[600] ml-10">
+        <a href="">LOGO</a>
+    </div>
+    <ul class="hidden md:flex space-x-6 text-[20px] items-center">
+        <li><a href="#index" class="hover:text-gray-300 transition-colors">Inicio</a></li>
+        <li><a href="#services" class="hover:text-gray-300 transition-colors">Servicios</a></li>
+        <li><a href="#projects" class="hover:text-gray-300 transition-colors">Proyectos</a></li>
+        <li class="ml-5 mr-12 pt-3 pb-3 pr-5 pl-5 bg-[#676F9D] rounded-[7px] hover:bg-[#7a82b8] transition-colors"><a href="#cotizar">Cotizar Ahora</a></li>
     </ul>
+    <button id="mobile-menu-button" class="text-white text-2xl hover:text-gray-300 transition-colors md:hidden mr-5">
+        <i id="hamburger-icon" class="fa-solid fa-bars"></i>
+    </button>
 </nav>
+
+<div id="mobile-menu" class="hidden md:hidden mx-5 bg-[#424669] rounded-[20px]">
+    <ul class="flex flex-col space-y-3 p-6 text-[18px] text-center">
+        <li><a href="#index" class="block text-white hover:text-gray-300 transition-colors py-2">Inicio</a></li>
+        <li><a href="#services" class="block text-white hover:text-gray-300 transition-colors py-2">Servicios</a></li>
+        <li><a href="#projects" class="block text-white hover:text-gray-300 transition-colors py-2">Proyectos</a></li>
+        <li class="pt-2">
+            <a href="#cotizar" class="block text-center pt-3 pb-3 pr-5 pl-5 bg-[#676F9D] rounded-[7px] hover:bg-[#7a82b8] transition-colors">
+                Cotizar Ahora
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+
+        mobileMenuButton?.addEventListener('click', function() {
+            mobileMenu?.classList.toggle('hidden');
+            hamburgerIcon?.classList.toggle('hidden');
+        });
+
+        const mobileLinks = mobileMenu?.querySelectorAll('a');
+        mobileLinks?.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu?.classList.add('hidden');
+                hamburgerIcon?.classList.remove('hidden');
+            });
+        });
+    });
+</script>
+
+<script>
+
+</script>
