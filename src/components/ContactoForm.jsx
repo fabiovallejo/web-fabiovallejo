@@ -98,9 +98,9 @@ export default function ContactoForm() {
             type="submit"
             disabled={!formValido}
             className={`bg-[#F8B179] pt-3 pb-3 pl-5 pr-5 rounded-[15px] text-[15px] sm:text-[20px] mt-4
-              shadow-[20px_20px_40px_rgba(0,0,0,0.6),-20px_-20px_40px_rgba(255,255,255,0.08)]
-              hover:shadow-[16px_16px_32px_rgba(0,0,0,0.7),-16px_-16px_32px_rgba(255,255,255,0.12)]
-              active:shadow-[inset_10px_10px_20px_rgba(0,0,0,0.5),inset_-10px_-10px_20px_rgba(255,255,255,0.1)]
+              shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_4px_8px_rgba(0,0,0,0.3),0_12px_24px_rgba(0,0,0,0.2)]
+              hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.3),0_6px_12px_rgba(0,0,0,0.4),0_20px_40px_rgba(0,0,0,0.25)]
+              active:shadow-[inset_2px_2px_6px_rgba(0,0,0,0.4),inset_-2px_-2px_6px_rgba(255,255,255,0.1)]
               transition-all duration-300 hover:-translate-y-1.5
               active:translate-y-0 text-white font-medium ${
                 !formValido ? 'opacity-75 cursor-not-allowed' : 'opacity-100 cursor-pointer'

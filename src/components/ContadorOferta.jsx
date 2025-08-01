@@ -28,7 +28,7 @@ export default function ContadorOferta() {
   }, []);
 
     return (
-    <div className='lg:w-[70%] rounded-[7px] text-center bg-[#676F9D] mt-5 pt-2 pb-2 pr-4 pl-4 mb-2 shadow-[8px_8px_15px_rgba(0,0,0,0.3),_-6px_-6px_12px_rgba(255,255,255,0.05)]'>
+    <div className='lg:w-[70%] rounded-[7px] text-center bg-[#676F9D] mt-5 pt-2 pb-2 pr-4 pl-4 mb-2 shadow-[inset_0_2px_4px_rgba(255,255,255,0.03),inset_0_-2px_6px_rgba(0,0,0,0.2),0_2px_3px_rgba(0,0,0,0.2),0_4px_6px_rgba(0,0,0,0.15),0_8px_12px_rgba(0,0,0,0.12),0_12px_20px_rgba(0,0,0,0.1)]'>
         <p className="uppercase font-[600] text-[17px] sm:text-[20px]">¡25% de Descuento por tiempo limitado!</p>
         <p className="text-[16px] sm:text-[20px] font-[500]">
         Faltan <b>{tiempoRestante.dias}:{tiempoRestante.horas.toString().padStart(2, '0')}:
